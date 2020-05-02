@@ -5,7 +5,11 @@
     "version": "1.0",
   
     "description": "This extension applies soley for tutors and LCPs at Stanford University. It opens the Sututor calendar for either the current week or coming week.",
-  
+    
+    "permissions": [
+      "tabs"
+    ],
+
     "icons": {
       "48": "icons/calendar48.png",
       "96": "icons/calendar96.png"
