@@ -1,0 +1,50 @@
+body {
+    background-color: #4d4f53; /* Stanford Cool Grey*/
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+h1 {
+    margin: 0px;
+    border: 0px;
+    padding: 2px;
+}
+
+p {
+    font-size: 20px;
+}
+
+hr {
+    border: 1px solid white;
+    border-radius: 1px;
+}
+
+#su {
+    color: #009b76;
+    /* Stanford Mint */
+}
+
+#link {
+    color: #007c92;
+    /* Stanford Lagunita */
+}
+
+#buttons {
+    margin: auto;
+    text-align: center;
+}
+
+.button {
+    background-color: #8c1515; /* Stanford Cardinal */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
