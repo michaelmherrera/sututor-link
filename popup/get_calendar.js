@@ -1,3 +1,6 @@
+/* Handles browser being object having the name 'chrome' when used on chrome*/
+const browser = window.browser || window.chrome; 
+
 const url_base = "https://sututor.stanford.edu/TracWeb40/schedule.4sp?calStartDate=";
 
 function open_tab(when){
