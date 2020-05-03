@@ -1,24 +1,21 @@
 {
+  "manifest_version": 2,
+  "name": "SututorLink",
+  "version": "1.0",
+  "description": "This extension applies soley for tutors and LCPs at Stanford University. It opens the Sututor calendar for either the current week or coming week.",
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
 
-    "manifest_version": 2,
-    "name": "SututorLink",
-    "version": "1.0",
-  
-    "description": "This extension applies soley for tutors and LCPs at Stanford University. It opens the Sututor calendar for either the current week or coming week.",
-    
-    "permissions": [
-      "tabs"
-    ],
 
-    "icons": {
-      "48": "icons/calendar48.png",
-      "96": "icons/calendar96.png"
-    },
-
-    "browser_action": {
-        "default_icon": "icons/calendar48.png",
-        "default_title": "SututorLink",
-        "default_popup": "popup/sututor_link.html"
-      }
-  
+  "icons": {
+    "48": "icons/calendar48.png",
+    "96": "icons/calendar96.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/calendar48.png",
+    "default_title": "SututorLink",
+    "default_popup": "popup/sututor_link.html"
   }
+}

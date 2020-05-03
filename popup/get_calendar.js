@@ -1,25 +1,23 @@
 /* Handles browser being object having the name 'chrome' when used on chrome*/
-const browser = window.browser || window.chrome; 
+const browser = window.browser || window.chrome;
 
 const url_base = "https://sututor.stanford.edu/TracWeb40/schedule.4sp?calStartDate=";
 
-function open_tab(when){
+function open_tab(when) {
     /**
      * Given a datetime, opens the TutorTrac calendar for that date
      */
     var date_str = when.toLocaleDateString();
     var calendar_url = "".concat(url_base, date_str);
     // First, goes to the tutor profile view. Ommitting this can cause login errors
-    var new_tab = browser.tabs.create({
+    console.log('about to execute')
+    browser.tabs.create({
         url: "https://sututor.stanford.edu/TracWeb40/ajxData.4sp?type=switchProfile&dir=sc"
-    })
-    // Now, goes to the calendar
-    new_tab.then( function(val){ 
-        browser.tabs.update({url: calendar_url});
     });
+    
 }
 
-function open_today(today){
+function open_today(today) {
     /**
      * Open the TutorTrac calendar for the current week
      */
@@ -27,13 +25,13 @@ function open_today(today){
     open_tab(today);
 }
 
-function open_next_week(today){
+function open_next_week(today) {
     /**
      * Open the TutorTrac calendar for the coming week
      */
     var today = new Date();
     var next_week = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 7);
-    open_tab(next_week)
+    open_tab(next_week);
 }
 
 var today_button = document.getElementById("today");
